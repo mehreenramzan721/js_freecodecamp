@@ -28,3 +28,13 @@ const { today: { low: lowToday, high: highToday } } = LOCAL_FORECAST;
 var a = 8, b = 6;
 // Only change code below this line
 [a,b]=[b,a]// swapped using destructuring
+
+// via rest operator
+function removeFirstTwo(list) {
+  const [a,b,...arr]=list
+  return arr;
+}
+
+const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const sourceWithoutFirstTwo = removeFirstTwo(source);
+// now we will get first two element removed from the array and the answer will be the remainings
