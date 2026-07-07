@@ -4,8 +4,13 @@
 // uppercaseString("hello");
 // lowercaseString("WORLD!");
 
-import * as stringFunctions from "./string_functions.js"
+// import * as stringFunctions from "./string_functions.js"
+// // Only change code above this line
+
+// stringFunctions.uppercaseString("hello");
+// stringFunctions.lowercaseString("WORLD!");
+
+import subtract from "./math_functions.js"
 // Only change code above this line
 
-stringFunctions.uppercaseString("hello");
-stringFunctions.lowercaseString("WORLD!");
+subtract(7,4);
