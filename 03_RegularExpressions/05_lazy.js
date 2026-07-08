@@ -1,0 +1,9 @@
+// let text = "<h1>Winter is coming</h1>";
+// let myRegex = /<.*?>/; // Change this line
+// let result = text.match(myRegex);
+
+// let reCriminals = /C+/; // Change this line
+
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; // Change this line
+let result = calRegex.test(rickyAndCal);
