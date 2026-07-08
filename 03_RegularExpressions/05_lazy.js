@@ -29,6 +29,11 @@
 // let result = movieName.match(numRegex).length;
 
 
-let movieName = "2001: A Space Odyssey";
-let noNumRegex = /\D/g; // Change this line
-let result = movieName.match(noNumRegex).length;
+// let movieName = "2001: A Space Odyssey";
+// let noNumRegex = /\D/g; // Change this line
+// let result = movieName.match(noNumRegex).length;
+
+
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z](\d{2,}|[a-z]+\d*)$/i; // Change this line
+let result = userCheck.test(username);
