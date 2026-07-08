@@ -4,6 +4,10 @@
 
 // let reCriminals = /C+/; // Change this line
 
-let rickyAndCal = "Cal and Ricky both like racing.";
-let calRegex = /^Cal/; // Change this line
-let result = calRegex.test(rickyAndCal);
+// let rickyAndCal = "Cal and Ricky both like racing.";
+// let calRegex = /^Cal/; // Change this line
+// let result = calRegex.test(rickyAndCal);
+
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/; // Change this line
+let result = lastRegex.test(caboose);
