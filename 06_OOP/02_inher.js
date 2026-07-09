@@ -51,21 +51,66 @@
 
 
 
-function Animal() { }
+// function Animal() { }
 
-Animal.prototype.eat = function() {
-  console.log("nom nom nom");
+// Animal.prototype.eat = function() {
+//   console.log("nom nom nom");
+// };
+
+// function Dog() { }
+
+// // Only change code below this line
+
+// Dog.prototype = Object.create(Animal.prototype);
+// Dog.prototype.constructor = Dog;
+
+// Dog.prototype.bark = function() {
+//   console.log("Woof!");
+// };
+
+// let beagle = new Dog();
+
+
+
+// function Bird() { }
+
+// Bird.prototype.fly = function() {
+//   return "I am flying!";
+// };
+
+// function Penguin() { }
+
+// Penguin.prototype = Object.create(Bird.prototype);
+// Penguin.prototype.constructor = Penguin;
+
+// // Only change code below this line
+
+// Penguin.prototype.fly = function() {
+//   return "Alas, this is a flightless bird.";
+// };
+
+// let penguin = new Penguin();
+// let bird = new Bird();
+
+
+
+let bird = {
+  name: "Donald",
+  numLegs: 2
 };
 
-function Dog() { }
+let boat = {
+  name: "Warrior",
+  type: "race-boat"
+};
 
 // Only change code below this line
 
-Dog.prototype = Object.create(Animal.prototype);
-Dog.prototype.constructor = Dog;
-
-Dog.prototype.bark = function() {
-  console.log("Woof!");
+let glideMixin = function(obj) {
+  obj.glide = function() {
+    console.log("Gliding gracefully!");
+  };
 };
 
-let beagle = new Dog();
+glideMixin(bird);
+glideMixin(boat);
