@@ -45,16 +45,33 @@
 // console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
 
 
-let myNestedArray = [
-  // Only change code below this line
-    ['loop', 
-      ['deep', 
-        ['deeper', 
-          ['deepest'
-          ]
-        ]
-      ]
-    ]
+// let myNestedArray = [
+//   // Only change code below this line
+//     ['loop', 
+//       ['deep', 
+//         ['deeper', 
+//           ['deepest'
+//           ]
+//         ]
+//       ]
+//     ]
   
-  // Only change code above this line
-];
+//   // Only change code above this line
+// ];
+
+
+
+// const foods = {
+//   apples: 25,
+//   oranges: 32,
+//   plums: 28
+// };
+
+// // Only change code below this line
+// foods["bananas"] = 13
+// foods["grapes"] = 35
+// foods["strawberries"] = 27
+
+// // Only change code above this line
+
+// console.log(foods);
