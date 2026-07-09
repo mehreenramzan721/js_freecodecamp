@@ -94,23 +94,49 @@
 
 
 
-let bird = {
-  name: "Donald",
-  numLegs: 2
-};
+// let bird = {
+//   name: "Donald",
+//   numLegs: 2
+// };
 
-let boat = {
-  name: "Warrior",
-  type: "race-boat"
-};
+// let boat = {
+//   name: "Warrior",
+//   type: "race-boat"
+// };
 
-// Only change code below this line
+// // Only change code below this line
 
-let glideMixin = function(obj) {
-  obj.glide = function() {
-    console.log("Gliding gracefully!");
-  };
-};
+// let glideMixin = function(obj) {
+//   obj.glide = function() {
+//     console.log("Gliding gracefully!");
+//   };
+// };
 
-glideMixin(bird);
-glideMixin(boat);
+// glideMixin(bird);
+// glideMixin(boat);
+
+
+
+// function Bird() {
+//   let weight = 15;
+
+//   this.getWeight = function() {
+//     return weight;
+//   };
+// }
+
+
+let funModule = (function () {
+  return {
+    isCuteMixin: function(obj) {
+      obj.isCute = function() {
+        return true;
+      };
+    },
+    singMixin: function(obj) {
+      obj.sing = function() {
+        console.log("Singing to an awesome tune");
+      };
+    }
+  }
+})();
