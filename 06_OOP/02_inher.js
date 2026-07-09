@@ -32,19 +32,40 @@
 
 
 
+// function Animal() { }
+// function Bird() { }
+// function Dog() { }
+
+// Bird.prototype = Object.create(Animal.prototype);
+// Dog.prototype = Object.create(Animal.prototype);
+
+// // Only change code below this line
+// Bird.prototype.constructor = Bird;
+// Dog.prototype.constructor = Dog;
+
+
+// let duck = new Bird();
+// let beagle = new Dog();
+// duck.constructor;
+// beagle.constructor;
+
+
+
 function Animal() { }
-function Bird() { }
+
+Animal.prototype.eat = function() {
+  console.log("nom nom nom");
+};
+
 function Dog() { }
 
-Bird.prototype = Object.create(Animal.prototype);
-Dog.prototype = Object.create(Animal.prototype);
-
 // Only change code below this line
-Bird.prototype.constructor = Bird;
+
+Dog.prototype = Object.create(Animal.prototype);
 Dog.prototype.constructor = Dog;
 
+Dog.prototype.bark = function() {
+  console.log("Woof!");
+};
 
-let duck = new Bird();
 let beagle = new Dog();
-duck.constructor;
-beagle.constructor;
